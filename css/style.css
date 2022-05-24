@@ -189,13 +189,13 @@ body{
 
 .utente{
     align-self: flex-end;
-    margin-right: 50px;
+    margin-right: 40px;
     background-color: lightgreen;
 }
 
 .altro-utente{
     align-self: flex-start;
-    margin-left: 70px;
+    margin-left: 40px;
     background-color: white;
 }
 
@@ -209,4 +209,25 @@ body{
     display: flex;
     align-items: center;
     border-radius: 10px;
+}
+
+.text-writing{
+    height: 80px;
+    background-color: #E6DFD6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-writing input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.text-writing i{
+    color: gray;
+    font-size: 20px;
 }
