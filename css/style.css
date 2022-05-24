@@ -13,4 +13,13 @@
 -----------*/
 body{
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(
+        to bottom,   
+        #009688 0%,
+        #009688 20%,
+        #DBDBD2 20%,
+        #DBDBD2 100%
+    );
+    height: 100vh;
+    width: 100vw;
 }
