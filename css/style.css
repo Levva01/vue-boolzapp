@@ -170,9 +170,43 @@ body{
     background-color: #E6DFD6;
     border-left: 0.1px solid lightgray;
     align-items: center;
+    height: 59px;
 }
 
 .profile-chat .accesso{
     color: gray;
     font-size: 10px;
+}
+
+.chat{
+    width: 100%;
+    height: calc(100% - 139px);
+    background-image: url("../img/mine.jpg");
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.utente{
+    align-self: flex-end;
+    margin-right: 50px;
+    background-color: lightgreen;
+}
+
+.altro-utente{
+    align-self: flex-start;
+    margin-left: 70px;
+    background-color: white;
+}
+
+.messaggio{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
 }
