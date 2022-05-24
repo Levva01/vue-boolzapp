@@ -35,18 +35,22 @@ body{
     margin: auto;
     background-color: aqua;
     margin-top: 10px;
+    display: flex;
 }
 
+/*----------------
+    LEFT COLUMN
+----------------*/
 .left-col{
     display: flex;
     flex-direction: column;
     font-size: 14px;
+    width: 35%;
 }
 
 .profile{
     background-color: #E6DFD6;
     display: flex;
-    width: 35%;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -72,7 +76,6 @@ body{
 }
 
 .notification{
-    width: 35%;
     background-color: #8EDAFC;
     display: flex;
     align-items: center;
@@ -96,7 +99,6 @@ body{
 }
 
 .search-bar{
-    width: 35%;
     display: flex;
     background-color: #FAFAFA;
     height: 40px;
@@ -113,7 +115,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 30px;
-    border-right: 1px solid gray;
+    border-right: 0.1px solid lightgray;
 }
 
 .search-bar input{
@@ -124,10 +126,9 @@ body{
 }
 
 .contacts{
-    height: 73vh;
-    width: 35%;
+    height: 75vh;
     background-color: white;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .contacts img{
@@ -151,6 +152,27 @@ body{
 }
 
 .contact .orario{
+    color: gray;
+    font-size: 10px;
+}
+
+/*-------------------
+    RIGHT COLUMN
+-------------------*/
+.right-col{
+    width: 65%;
+}
+
+.profile-chat{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #E6DFD6;
+    border-left: 0.1px solid lightgray;
+    align-items: center;
+}
+
+.profile-chat .accesso{
     color: gray;
     font-size: 10px;
 }
