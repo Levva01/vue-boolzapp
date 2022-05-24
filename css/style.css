@@ -88,8 +88,37 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 50px;
+    color: #8EDAFC;
 }
 
 .notification a{
     color: gray;
+}
+
+.search-bar{
+    width: 35%;
+    display: flex;
+    background-color: #FAFAFA;
+    height: 40px;
+    padding: 5px;
+}
+
+.search-bar button{
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-right: 1px solid gray;
+}
+
+.search-bar input{
+    width: 80%;
+    border: none;
+    padding-left: 10px;
+    height: 30px;
 }
