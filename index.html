@@ -73,7 +73,7 @@
                         
                         <div class="name-img-left">
         
-                            <img class="profile-picture" :src="creaImg(index)" alt="">
+                            <img class="profile-picture" :src="creaImg(contact.avatar)" alt="">
     
                             <div class="name-text">
     
@@ -84,7 +84,7 @@
         
                         </div>
 
-                        <div class="orario">12.00</div>
+                        <div class="orario">{{getDate(index)}}</div>
 
                     </div>
 
@@ -102,11 +102,11 @@
 
                     <div class="name-img-left">
         
-                        <img class="profile-picture" src="img/avatar_1.jpg" alt="">
+                        <img class="profile-picture" :src="creaImg(contacts[currentIndex].avatar)" alt="">
 
                         <div class="name-text">    
-                            <div class="name-chat">Michele</div>
-                            <div class="accesso">Ultimo accesso oggi alle 12:00</div>
+                            <div class="name-chat">{{contacts[currentIndex].name}}</div>
+                            <div class="accesso">Ultimo accesso oggi alle {{getDate(currentIndex)}}</div>
                         </div>
     
                     </div>

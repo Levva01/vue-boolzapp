@@ -175,18 +175,24 @@ const app = new Vue({
 
     methods: {
 
-        creaImg(index){
-            return `img/avatar${this.contacts[index].avatar}.jpg`;
-
+        creaImg(img){
+            return `img/avatar${img}.jpg`;
         },
 
         ultimoMessaggio(index){
             return this.contacts[index].messages[this.contacts[index].messages.length - 1].message;
         },
 
+
         choiceChat(index) {
             this.currentIndex = index;
         },
+
+        getDate(index){
+            return this.contacts[index].messages[this.contacts[index].messages.length - 1].date.substring(11, 16);
+        },
+
+
 
     },
 
