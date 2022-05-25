@@ -172,6 +172,7 @@ const app = new Vue({
         ],
 
     },
+    
 
     methods: {
 
@@ -186,13 +187,12 @@ const app = new Vue({
 
         choiceChat(index) {
             this.currentIndex = index;
+
         },
 
         getDate(index){
             return this.contacts[index].messages[this.contacts[index].messages.length - 1].date.substring(11, 16);
         },
-
-
 
     },
 
