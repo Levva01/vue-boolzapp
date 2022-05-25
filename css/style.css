@@ -128,7 +128,7 @@ body{
 .contacts{
     height: 75vh;
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .contacts img{
@@ -145,6 +145,7 @@ body{
 .contact .testo{
     color: gray;
     font-size: 12px;
+
 }
 
 .contact:hover{

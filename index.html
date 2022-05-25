@@ -69,22 +69,22 @@
                 <!-- contacts -->
                 <div class="contacts">
 
-                    <div class="contact">
+                    <div class="contact"  v-for="(contact, index) in contacts" @click="choiceChat(index)">
                         
                         <div class="name-img-left">
         
-                            <img class="profile-picture" src="img/avatar_1.jpg" alt="">
+                            <img class="profile-picture" :src="creaImg(index)" alt="">
     
                             <div class="name-text">
     
-                                <div class="name">Michele</div>
-                                <div class="testo">Ultimo messaggio inviato</div>
+                                <div class="name">{{contact.name}}</div>
+                                <div class="testo">{{ultimoMessaggio(index)}}</div>
     
                             </div>
         
                         </div>
 
-                        <div class="orario">12:00</div>
+                        <div class="orario">12.00</div>
 
                     </div>
 
