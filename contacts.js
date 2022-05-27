@@ -194,6 +194,29 @@ const app = new Vue({
             return this.contacts[index].messages[this.contacts[index].messages.length - 1].date.substring(11, 16);
         },
 
+        inviaMessaggio(currentIndex) {
+            
+            if(this.newMessage !== ' ' && this.newMessage !== null) {
+                const newMessage = {
+                    date: "",
+                    message: this.newMessage,
+                    status: 'sent',
+                };
+                this.contacts[currentIndex].messages.push(newMessage);
+                this.newMessage = '';
+            }
+
+            setTimeout(() => {
+                let nuovoMessaggioRicevuto = {
+                    date: "",
+                    message: 'Ok!',
+                    status: 'received',
+                }
+                this.contacts[currentIndex].messages.push(nuovoMessaggioRicevuto);
+            }, 1000);
+            
+        },
+
     },
 
 });

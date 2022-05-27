@@ -142,8 +142,7 @@
                 <div class="text-writing">
 
                     <i class="fa-solid fa-face-smile"></i>
-
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" @keyup.enter="inviaMessaggio(currentIndex)" v-model="newMessage">
 
                     <i class="fa-solid fa-microphone"></i>
 
